@@ -1,0 +1,19 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Hulk",
+      "alterEgo": "Hulk Person"
+    },
+    {
+      "id": 2,
+      "name": "Cyclope",
+      "alterEgo": "Cyclope Person"
+    },
+    {
+      "id": 3,
+      "name": "Spiderman",
+      "alterEgo": "Spiderman Person"
+    }
+  ]
+}
