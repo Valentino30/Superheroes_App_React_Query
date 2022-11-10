@@ -3,17 +3,17 @@
     {
       "id": 1,
       "name": "Hulk",
-      "alterEgo": "Hulk Person"
+      "alterEgo": "Bruce Banner"
     },
     {
       "id": 2,
       "name": "Cyclope",
-      "alterEgo": "Cyclope Person"
+      "alterEgo": "Scott Summers"
     },
     {
       "id": 3,
       "name": "Spiderman",
-      "alterEgo": "Spiderman Person"
+      "alterEgo": "Peter Parker"
     }
   ]
 }
