@@ -1,5 +1,5 @@
-import axios from "axios";
 import { useQuery } from "react-query";
+import axios, { AxiosError } from "axios";
 
 import { Hero } from "./types/hero";
 
@@ -8,9 +8,20 @@ const getSuperHeroes = () => {
 };
 
 const App = () => {
-  const { isLoading, data, error } = useQuery("super-heroes", getSuperHeroes);
+  const { isLoading, isError, data, error } = useQuery(
+    "super-heroes",
+    getSuperHeroes
+  );
+
   if (isLoading) return <h2>Loading ...</h2>;
-  if (error) return <h2>Something went wrong</h2>;
+
+  if (isError) {
+    if (error instanceof AxiosError) {
+      return <h2>{error.message}</h2>;
+    } else {
+      return <h2>Something went wrong</h2>;
+    }
+  }
 
   return (
     <div>
